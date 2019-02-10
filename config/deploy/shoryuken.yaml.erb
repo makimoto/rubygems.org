@@ -57,6 +57,8 @@ spec:
               secretKeyRef:
                 name: <%= environment %>
                 key: secret_key_base
+          - name: RAILS_LOG_TO_STDOUT
+            value: "true"
           - name: AWS_REGION
             value: "us-west-2"
           - name: FASTLY_LOG_PROCESSOR_ENABLED
